@@ -30,15 +30,11 @@
   function applyTheme(theme) {
     if (theme === "light") {
       root.setAttribute("data-theme", "light");
-      if (themeIcon) {
-        themeIcon.className = "fa-solid fa-moon";
-      }
+      if (themeIcon) themeIcon.textContent = "☾";
       if (themeText) themeText.textContent = "Dark";
     } else {
       root.removeAttribute("data-theme");
-      if (themeIcon) {
-        themeIcon.className = "fa-solid fa-sun";
-      }
+      if (themeIcon) themeIcon.textContent = "☀";
       if (themeText) themeText.textContent = "Light";
     }
   }
