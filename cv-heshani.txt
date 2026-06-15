@@ -1,0 +1,73 @@
+======================================================================
+HESHANI WICKRAMASINGHE
+Full-Stack Developer | MERN Stack | Android (Kotlin)
+======================================================================
+Location: Malabe, Sri Lanka
+Email: wickramasinghheshani@gmail.com
+Phone: +94 769 304 405
+GitHub: https://github.com/HeshaniWickramasinghe
+LinkedIn: https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b
+
+----------------------------------------------------------------------
+PROFESSIONAL SUMMARY
+----------------------------------------------------------------------
+Information Technology undergraduate at SLIIT, Malabe, specializing in 
+full-stack web and mobile application development. Proficient in the 
+MERN stack, Spring Boot REST APIs, and Kotlin-based Android development. 
+Experienced in building multi-module applications with real-world features 
+including authentication, real-time updates, and role-based access control. 
+Seeking a software engineering internship to contribute meaningfully to 
+impactful projects.
+
+----------------------------------------------------------------------
+EDUCATION
+----------------------------------------------------------------------
+Sri Lanka Institute of Information Technology (SLIIT), Malabe
+BSc (Hons) in Information Technology
+Specialization: Software Engineering
+Expected Graduation: 2026
+
+----------------------------------------------------------------------
+TECHNICAL SKILLS
+----------------------------------------------------------------------
+* Languages: Java, Kotlin, JavaScript, Python, C, C++, PHP
+* Frontend: React.js, HTML5, CSS3, Material Design
+* Backend: Node.js, Express.js, Spring Boot, REST API, JWT, OAuth 2.0
+* Mobile: Android (Kotlin), MVVM, Android Jetpack, Room Database
+* Databases: MongoDB, MySQL
+* Tools & DevOps: Git, GitHub, Docker, Postman, Figma, Android Studio
+* Concepts: OOP, MVC, MVVM, Agile/Scrum
+
+----------------------------------------------------------------------
+PROJECTS
+----------------------------------------------------------------------
+1. Smart Alert - School Management System (2025)
+   * Description: Full-stack platform digitizing attendance, transport, 
+     exams, and notices. Real-time notifications for students, teachers, 
+     and admins.
+   * Tech Stack: MongoDB, Express.js, React, Node.js, JWT Auth
+
+2. Uni-Connect - University Community Platform (2026)
+   * Description: Integrated campus platform for lost & found, peer 
+     tutoring (kuppi), and student engagement.
+   * Tech Stack: MongoDB, Express.js, React, Node.js, JWT Auth
+
+3. SmartCampus - Smart Campus Resource Management (2026)
+   * Description: Campus platform for facility booking with conflict 
+     detection, maintenance ticket tracking, and technician assignment.
+   * Tech Stack: Spring Boot, React 19, MongoDB, JWT, Google OAuth 2.0
+
+4. Nuvio - Android Wellness & Habit Tracker (2025)
+   * Description: Android app with task creation, categorization, and 
+     deadlines. Local Room Database persistence.
+   * Tech Stack: Kotlin, Android Studio, Room DB, MVVM, Android Jetpack
+
+----------------------------------------------------------------------
+CERTIFICATIONS
+----------------------------------------------------------------------
+* MongoDB Atlas Administrator Path (MongoDB Official Certification, 2026)
+  Modules: Atlas Foundations & Security, Replication, Administration, 
+  Logging, Metrics & Monitoring, Backup & Recovery, Upgrades & Maintenance.
+
+* Python for Beginners (University of Moratuwa / Open UOM, 2026)
+======================================================================
