@@ -12,7 +12,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@300;400;500;600;700;900&family=Syne:wght@700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@300;400;500;600;700;900&family=Syne:wght@700;800&display=swap"
     rel="stylesheet">
 
   <!-- Bootstrap Icons -->
@@ -39,6 +40,9 @@
     <div class="blob blob1"></div>
     <div class="blob blob2"></div>
   </div>
+
+  <!-- Full Page Constellation Background -->
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
 
   <!-- Sidebar Navigation -->
   <aside class="aside" id="aside">
@@ -81,15 +85,17 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="pill">Full-Stack & Android Developer</p>
-          <h1>I build web & mobile apps that feel <span class="highlight-purple">simple,</span> <span class="highlight-cyan">fast & reliable</span></h1>
-          
+          <h1>I build web & mobile apps that feel <span class="highlight-purple">simple,</span> <span
+              class="highlight-cyan">fast & reliable</span></h1>
+
           <!-- Typewriter animation container -->
           <div class="typewriter-wrap">
             <span class="typewriter-text" id="typewriter"></span>
           </div>
 
           <p class="hero-desc">
-            Specializing in security, database normalization, MERN stack, Kotlin mobile apps, and robust Spring Boot microservices. Building scalable solutions for real-world operations.
+            Specializing in security, database normalization, MERN stack, Kotlin mobile apps, and robust Spring Boot
+            microservices. Building scalable solutions for real-world operations.
           </p>
 
           <div class="hero-chips">
@@ -100,15 +106,17 @@
 
           <div class="hero-cta">
             <a class="btn btn-primary" href="#work">See my Work</a>
+            <a class="btn btn-ghost"
+              href="https://drive.google.com/file/d/1brW_HeBXXF4GCFmmQ08-83Uc9VuDZv_T/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer"><i class="bi bi-download"></i> Download CV</a>
             <a class="btn btn-ghost" href="#contact">Hire Me</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Interactive constellation visual">
+        <div class="hero-visual" aria-label="Interactive profile visual">
           <div class="hero-photo-circle">
             <img src="profile.jpg" alt="Heshani Wickramasinghe">
           </div>
-          <canvas id="heroCanvas" class="hero-canvas"></canvas>
         </div>
       </div>
     </section>
@@ -117,7 +125,7 @@
     <section class="section" id="about">
       <div class="container">
         <div class="section-sub">About Me</div>
-        <h2 class="section-title">My Background</h2>
+        <h6 class="section-title">My Background</h6>
 
         <div class="about-grid">
           <div class="about-left">
@@ -130,7 +138,8 @@
 
           <div class="about-right">
             <div class="section-sub">My Journey</div>
-            <h2 class="section-title" style="margin-bottom:15px; font-size: 1.8rem;">Passionate about building impactful solutions</h2>
+            <h2 class="section-title" style="margin-bottom:15px; font-size: 1.8rem;">Passionate about building impactful
+              solutions</h2>
             <p class="about-desc">
               I'm an Information Technology undergraduate at SLIIT, Malabe, specializing in full-stack web and mobile
               application development. I enjoy building multi-module applications with real-world features like
@@ -194,14 +203,21 @@
 
             <!-- Social Circle Buttons -->
             <div class="about-socials-row">
-              <a class="about-social-circle" href="mailto:wickramasinghheshani@gmail.com" title="Gmail"><i class="bi bi-envelope"></i></a>
-              <a class="about-social-circle" href="https://github.com/HeshaniWickramasinghe" target="_blank" rel="noreferrer" title="GitHub"><i class="bi bi-github"></i></a>
-              <a class="about-social-circle" href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b" target="_blank" rel="noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a class="about-social-circle" href="mailto:wickramasinghheshani@gmail.com" title="Gmail"><i
+                  class="bi bi-envelope"></i></a>
+              <a class="about-social-circle" href="https://github.com/HeshaniWickramasinghe" target="_blank"
+                rel="noreferrer" title="GitHub"><i class="bi bi-github"></i></a>
+              <a class="about-social-circle" href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b"
+                target="_blank" rel="noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
               <a class="about-social-circle" href="tel:+94769304405" title="Phone"><i class="bi bi-telephone"></i></a>
             </div>
 
-            <div style="margin-top: 18px;">
+            <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
               <a class="btn btn-primary" href="#contact">Hire Me</a>
+              <a href="Wickramasinghe_H_CV.pdf" 
+                 download="Wickramasinghe_H_CV.pdf">
+                 Download CV
+              </a>
             </div>
           </div>
 
@@ -265,22 +281,20 @@
     <section class="section" id="work">
       <div class="container">
         <div class="section-sub">Portfolio</div>
-        <h2 class="section-title">My Projects</h2>
+        <h6 class="section-title">My Projects</h6>
 
         <div class="projects-grid">
           <!-- Project Card 1: Smart Alert -->
-          <article class="project-card"
-            data-title="Smart Alert – School Portal"
-            data-year="2025"
+          <article class="project-card" data-title="Smart Alert – School Portal" data-year="2025"
             data-desc="Digitizing attendance tracking, transport operations, and notices with real-time communications. Features role-based dashboards for students, teachers, and admins with JWT-secured routes."
             data-tags="MongoDB,Express.js,React,Node.js,JWT"
             data-demo="https://heshaniwickramasinghe.github.io/smart-alert/"
-            data-github="https://github.com/chanuka-mr/Smart-Alert"
-            data-img="cover_smart_alert.png">
+            data-github="https://github.com/chanuka-mr/Smart-Alert" data-img="cover_smart_alert.png">
             <div class="project-thumb">
               <img src="cover_smart_alert.png" alt="Smart Alert school portal mockup" />
             </div>
-            <a href="https://github.com/chanuka-mr/Smart-Alert" target="_blank" rel="noreferrer" class="project-gh-bubble" onclick="event.stopPropagation()">
+            <a href="https://github.com/chanuka-mr/Smart-Alert" target="_blank" rel="noreferrer"
+              class="project-gh-bubble" onclick="event.stopPropagation()">
               <i class="bi bi-github"></i>
               github.com/chanuka-mr/Smart-Alert
             </a>
@@ -295,18 +309,16 @@
           </article>
 
           <!-- Project Card 2: Uni-Connect -->
-          <article class="project-card"
-            data-title="Uni-Connect – Community Portal"
-            data-year="2026"
+          <article class="project-card" data-title="Uni-Connect – Community Portal" data-year="2026"
             data-desc="Integrated university platform for lost &amp; found, peer tutoring, and payment engagement. Supports student and admin portals with real-time item tracking and tutor booking."
             data-tags="MongoDB,Express.js,React,Node.js,JWT"
             data-demo="https://heshaniwickramasinghe.github.io/Uni-Connect/"
-            data-github="https://github.com/HeshaniWickramasinghe/Uni-Connect"
-            data-img="cover_uni_connect.png">
+            data-github="https://github.com/HeshaniWickramasinghe/Uni-Connect" data-img="cover_uni_connect.png">
             <div class="project-thumb">
               <img src="cover_uni_connect.png" alt="Uni Connect community platform mockup" />
             </div>
-            <a href="https://github.com/HeshaniWickramasinghe/Uni-Connect" target="_blank" rel="noreferrer" class="project-gh-bubble" onclick="event.stopPropagation()">
+            <a href="https://github.com/HeshaniWickramasinghe/Uni-Connect" target="_blank" rel="noreferrer"
+              class="project-gh-bubble" onclick="event.stopPropagation()">
               <i class="bi bi-github"></i>
               github.com/HeshaniWickramasinghe/Uni-Connect
             </a>
@@ -321,18 +333,16 @@
           </article>
 
           <!-- Project Card 3: SmartCampus -->
-          <article class="project-card"
-            data-title="SmartCampus – Resource Planner"
-            data-year="2026"
+          <article class="project-card" data-title="SmartCampus – Resource Planner" data-year="2026"
             data-desc="Campus facility booking with conflict detection, ticket trackers, and Google OAuth 2.0. Includes technician assignment workflows, admin approval flows, and real-time room availability."
             data-tags="Spring Boot,React 19,MongoDB,JWT,OAuth 2.0"
             data-demo=" https://heshaniwickramasinghe.github.io/SmartCampus/"
-            data-github="https://github.com/MatheeshaKuruppu/SmartCampus"
-            data-img="cover_smart_campus.png">
+            data-github="https://github.com/MatheeshaKuruppu/SmartCampus" data-img="cover_smart_campus.png">
             <div class="project-thumb">
               <img src="cover_smart_campus.png" alt="SmartCampus resource reservation dashboard mockup" />
             </div>
-            <a href="https://github.com/MatheeshaKuruppu/SmartCampus" target="_blank" rel="noreferrer" class="project-gh-bubble" onclick="event.stopPropagation()">
+            <a href="https://github.com/MatheeshaKuruppu/SmartCampus" target="_blank" rel="noreferrer"
+              class="project-gh-bubble" onclick="event.stopPropagation()">
               <i class="bi bi-github"></i>
               github.com/MatheeshaKuruppu/SmartCampus
             </a>
@@ -347,18 +357,16 @@
           </article>
 
           <!-- Project Card 4: Nuvio -->
-          <article class="project-card"
-            data-title="Nuvio – Wellness &amp; Habit Tracker"
-            data-year="2025"
+          <article class="project-card" data-title="Nuvio – Wellness &amp; Habit Tracker" data-year="2025"
             data-desc="Android productivity application using Room Database local persistence and MVVM architecture. Supports habit creation, daily check-ins, streak tracking, and category-based task management."
             data-tags="Kotlin,Android Studio,Room DB,MVVM,Jetpack"
             data-demo="https://heshaniwickramasinghe.github.io/Nuvio/"
-            data-github="https://github.com/HeshaniWickramasinghe/Nuvio"
-            data-img="cover_nuvio.png">
+            data-github="https://github.com/HeshaniWickramasinghe/Nuvio" data-img="cover_nuvio.png">
             <div class="project-thumb">
               <img src="cover_nuvio.png" alt="Nuvio wellness and habit tracker mobile mockup" />
             </div>
-            <a href="https://github.com/HeshaniWickramasinghe/Nuvio" target="_blank" rel="noreferrer" class="project-gh-bubble" onclick="event.stopPropagation()">
+            <a href="https://github.com/HeshaniWickramasinghe/Nuvio" target="_blank" rel="noreferrer"
+              class="project-gh-bubble" onclick="event.stopPropagation()">
               <i class="bi bi-github"></i>
               github.com/HeshaniWickramasinghe/Nuvio
             </a>
@@ -369,10 +377,12 @@
                 <span>Kotlin</span><span>Android Studio</span><span>Room DB</span><span>MVVM</span><span>Jetpack</span>
               </div>
               <div class="project-actions">
-                <a href="https://heshaniwickramasinghe.github.io/Nuvio/" target="_blank" rel="noreferrer" class="btn btn-small btn-primary" onclick="event.stopPropagation()">
+                <a href="https://heshaniwickramasinghe.github.io/Nuvio/" target="_blank" rel="noreferrer"
+                  class="btn btn-small btn-primary" onclick="event.stopPropagation()">
                   <i class="bi bi-box-arrow-up-right"></i> Live Demo
                 </a>
-                <a href="https://github.com/HeshaniWickramasinghe/Nuvio" target="_blank" rel="noreferrer" class="btn btn-small btn-ghost" onclick="event.stopPropagation()">
+                <a href="https://github.com/HeshaniWickramasinghe/Nuvio" target="_blank" rel="noreferrer"
+                  class="btn btn-small btn-ghost" onclick="event.stopPropagation()">
                   <i class="bi bi-github"></i> GitHub
                 </a>
               </div>
@@ -387,7 +397,7 @@
     <section class="section" id="credentials">
       <div class="container">
         <div class="section-sub">Pathway</div>
-        <h2 class="section-title">Education & Certifications</h2>
+        <h6 class="section-title">Education & Certifications</h6>
 
         <div class="credentials-grid">
           <!-- Education Column -->
@@ -398,7 +408,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2023 - Present</div>
                 <h4 class="timeline-title">BSc (Hons) in Information Technology</h4>
-                <p class="timeline-desc">SLIIT Undergraduate (Malabe, Sri Lanka) — Specializing in Software Engineering</p>
+                <p class="timeline-desc">SLIIT Undergraduate (Malabe, Sri Lanka) — Specializing in Software Engineering
+                </p>
               </div>
             </div>
           </div>
@@ -411,20 +422,22 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2026</div>
                 <h4 class="timeline-title">MongoDB — MongoDB Atlas Administrator Path</h4>
-                <p class="timeline-desc">Official Certification (MongoDB University) — Covering security, replication, monitoring, and backups.</p>
+                <p class="timeline-desc">Official Certification (MongoDB University) — Covering security, replication,
+                  monitoring, and backups.</p>
               </div>
               <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2026</div>
                 <h4 class="timeline-title">Python for Beginners</h4>
-                <p class="timeline-desc">University of Moratuwa (Open UOM) — Foundational programming logic and application building.</p>
+                <p class="timeline-desc">University of Moratuwa (Open UOM) — Foundational programming logic and
+                  application building.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="section-sub">What I Know</div>
-        <h2 class="section-title">Tech Stack</h2>
+        <h6 class="section-title">Tech Stack</h6>
 
         <div class="tech-roller-container">
           <div class="tech-roller-track">
@@ -435,9 +448,12 @@
                 <span class="tech-card-dot" style="background: var(--accent2)"></span>
                 Frontend
               </div>
-              <div class="tech-item"><i class="bi bi-braces-asterisk tech-icon" style="color: var(--accent2)"></i> React.js</div>
-              <div class="tech-item"><i class="bi bi-code-slash tech-icon" style="color: #e34f26"></i> HTML5 / CSS3</div>
-              <div class="tech-item"><i class="bi bi-palette tech-icon" style="color: #ec4899"></i> Material Design</div>
+              <div class="tech-item"><i class="bi bi-braces-asterisk tech-icon" style="color: var(--accent2)"></i>
+                React.js</div>
+              <div class="tech-item"><i class="bi bi-code-slash tech-icon" style="color: #e34f26"></i> HTML5 / CSS3
+              </div>
+              <div class="tech-item"><i class="bi bi-palette tech-icon" style="color: #ec4899"></i> Material Design
+              </div>
               <div class="tech-item"><i class="bi bi-filetype-js tech-icon" style="color: #f7df1e"></i> JavaScript</div>
             </div>
 
@@ -448,9 +464,11 @@
                 Backend
               </div>
               <div class="tech-item"><i class="bi bi-nut tech-icon" style="color: #22c55e"></i> Node.js</div>
-              <div class="tech-item"><i class="bi bi-lightning-charge tech-icon" style="color: #f59e0b"></i> Express.js</div>
+              <div class="tech-item"><i class="bi bi-lightning-charge tech-icon" style="color: #f59e0b"></i> Express.js
+              </div>
               <div class="tech-item"><i class="bi bi-leaf tech-icon" style="color: #10b981"></i> Spring Boot</div>
-              <div class="tech-item"><i class="bi bi-cloud-arrow-down tech-icon" style="color: #06b6d4"></i> REST API</div>
+              <div class="tech-item"><i class="bi bi-cloud-arrow-down tech-icon" style="color: #06b6d4"></i> REST API
+              </div>
               <div class="tech-item"><i class="bi bi-key tech-icon" style="color: #a855f7"></i> JWT / OAuth 2.0</div>
             </div>
 
@@ -460,10 +478,13 @@
                 <span class="tech-card-dot" style="background: var(--accent)"></span>
                 Mobile
               </div>
-              <div class="tech-item"><i class="bi bi-phone tech-icon" style="color: var(--accent)"></i> Android (Kotlin)</div>
-              <div class="tech-item"><i class="bi bi-layers tech-icon" style="color: #3b82f6"></i> MVVM Architecture</div>
+              <div class="tech-item"><i class="bi bi-phone tech-icon" style="color: var(--accent)"></i> Android (Kotlin)
+              </div>
+              <div class="tech-item"><i class="bi bi-layers tech-icon" style="color: #3b82f6"></i> MVVM Architecture
+              </div>
               <div class="tech-item"><i class="bi bi-box tech-icon" style="color: #6366f1"></i> Android Jetpack</div>
-              <div class="tech-item"><i class="bi bi-database-fill tech-icon" style="color: #14b8a6"></i> Room Database</div>
+              <div class="tech-item"><i class="bi bi-database-fill tech-icon" style="color: #14b8a6"></i> Room Database
+              </div>
             </div>
 
             <!-- Databases -->
@@ -509,9 +530,12 @@
                 <span class="tech-card-dot" style="background: var(--accent2)"></span>
                 Frontend
               </div>
-              <div class="tech-item"><i class="bi bi-braces-asterisk tech-icon" style="color: var(--accent2)"></i> React.js</div>
-              <div class="tech-item"><i class="bi bi-code-slash tech-icon" style="color: #e34f26"></i> HTML5 / CSS3</div>
-              <div class="tech-item"><i class="bi bi-palette tech-icon" style="color: #ec4899"></i> Material Design</div>
+              <div class="tech-item"><i class="bi bi-braces-asterisk tech-icon" style="color: var(--accent2)"></i>
+                React.js</div>
+              <div class="tech-item"><i class="bi bi-code-slash tech-icon" style="color: #e34f26"></i> HTML5 / CSS3
+              </div>
+              <div class="tech-item"><i class="bi bi-palette tech-icon" style="color: #ec4899"></i> Material Design
+              </div>
               <div class="tech-item"><i class="bi bi-filetype-js tech-icon" style="color: #f7df1e"></i> JavaScript</div>
             </div>
 
@@ -522,9 +546,11 @@
                 Backend
               </div>
               <div class="tech-item"><i class="bi bi-nut tech-icon" style="color: #22c55e"></i> Node.js</div>
-              <div class="tech-item"><i class="bi bi-lightning-charge tech-icon" style="color: #f59e0b"></i> Express.js</div>
+              <div class="tech-item"><i class="bi bi-lightning-charge tech-icon" style="color: #f59e0b"></i> Express.js
+              </div>
               <div class="tech-item"><i class="bi bi-leaf tech-icon" style="color: #10b981"></i> Spring Boot</div>
-              <div class="tech-item"><i class="bi bi-cloud-arrow-down tech-icon" style="color: #06b6d4"></i> REST API</div>
+              <div class="tech-item"><i class="bi bi-cloud-arrow-down tech-icon" style="color: #06b6d4"></i> REST API
+              </div>
               <div class="tech-item"><i class="bi bi-key tech-icon" style="color: #a855f7"></i> JWT / OAuth 2.0</div>
             </div>
 
@@ -534,10 +560,13 @@
                 <span class="tech-card-dot" style="background: var(--accent)"></span>
                 Mobile
               </div>
-              <div class="tech-item"><i class="bi bi-phone tech-icon" style="color: var(--accent)"></i> Android (Kotlin)</div>
-              <div class="tech-item"><i class="bi bi-layers tech-icon" style="color: #3b82f6"></i> MVVM Architecture</div>
+              <div class="tech-item"><i class="bi bi-phone tech-icon" style="color: var(--accent)"></i> Android (Kotlin)
+              </div>
+              <div class="tech-item"><i class="bi bi-layers tech-icon" style="color: #3b82f6"></i> MVVM Architecture
+              </div>
               <div class="tech-item"><i class="bi bi-box tech-icon" style="color: #6366f1"></i> Android Jetpack</div>
-              <div class="tech-item"><i class="bi bi-database-fill tech-icon" style="color: #14b8a6"></i> Room Database</div>
+              <div class="tech-item"><i class="bi bi-database-fill tech-icon" style="color: #14b8a6"></i> Room Database
+              </div>
             </div>
 
             <!-- Databases -->
@@ -585,7 +614,7 @@
     <section class="section" id="contact">
       <div class="container">
         <div class="section-sub">Get In Touch</div>
-        <h2 class="section-title">Let's build something amazing together</h2>
+        <h6 class="section-title">Let's build something amazing together</h6>
 
         <div class="contact-grid">
           <!-- Form -->
@@ -597,18 +626,21 @@
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="you@example.com" required />
+                <input class="form-control" type="email" name="email" id="email" placeholder="you@example.com"
+                  required />
               </div>
             </div>
 
             <div class="form-group">
               <label for="subject">Subject</label>
-              <input class="form-control" type="text" name="subject" id="subject" placeholder="What are you writing about?" required />
+              <input class="form-control" type="text" name="subject" id="subject"
+                placeholder="What are you writing about?" required />
             </div>
 
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea class="form-control" name="message" id="message" placeholder="Write your message..." rows="5" required></textarea>
+              <textarea class="form-control" name="message" id="message" placeholder="Write your message..." rows="5"
+                required></textarea>
             </div>
 
             <div class="form-actions">
@@ -623,9 +655,12 @@
               <h3>Quick Links</h3>
               <p class="contact-card-desc">One click to reach me directly.</p>
               <div class="contact-sidebar-buttons">
-                <a class="contact-sidebar-btn" href="mailto:wickramasinghheshani@gmail.com"><i class="bi bi-envelope"></i> Gmail</a>
-                <a class="contact-sidebar-btn" href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b" target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
-                <a class="contact-sidebar-btn" href="https://github.com/HeshaniWickramasinghe" target="_blank" rel="noreferrer"><i class="bi bi-github"></i> GitHub</a>
+                <a class="contact-sidebar-btn" href="mailto:wickramasinghheshani@gmail.com"><i
+                    class="bi bi-envelope"></i> Gmail</a>
+                <a class="contact-sidebar-btn" href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b"
+                  target="_blank" rel="noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a class="contact-sidebar-btn" href="https://github.com/HeshaniWickramasinghe" target="_blank"
+                  rel="noreferrer"><i class="bi bi-github"></i> GitHub</a>
                 <a class="contact-sidebar-btn" href="tel:+94769304405"><i class="bi bi-telephone"></i> Phone Call</a>
               </div>
             </div>
@@ -647,7 +682,8 @@
             <div class="footer-links">
               <a href="mailto:wickramasinghheshani@gmail.com">Email</a>
               <a href="https://github.com/HeshaniWickramasinghe" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b" target="_blank"
+                rel="noreferrer">LinkedIn</a>
             </div>
           </div>
         </footer>
@@ -656,7 +692,8 @@
   </main>
 
   <!-- Project Modal -->
-  <div class="project-modal-backdrop" id="projectModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="project-modal-backdrop" id="projectModalBackdrop" role="dialog" aria-modal="true"
+    aria-labelledby="modalTitle">
     <div class="project-modal" id="projectModal">
       <button class="modal-close" id="modalClose" aria-label="Close project details">
         <i class="bi bi-x-lg"></i>

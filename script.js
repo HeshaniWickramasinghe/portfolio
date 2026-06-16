@@ -349,8 +349,8 @@
     window.addEventListener("resize", resize);
 
     const points = [];
-    const POINTS = 35; // slightly reduced for smaller visual circle area
-    const MAX_LINK_DIST = 100;
+    const POINTS = 85; // increased points to cover the full viewport
+    const MAX_LINK_DIST = 115;
     const SPEED = 0.35;
 
     function rand(min, max) {
@@ -457,11 +457,11 @@
       pointer.y = clamp(y, 0, 1);
     }
 
-    canvas.addEventListener("pointermove", (e) => {
+    document.addEventListener("pointermove", (e) => {
       pointer.active = true;
       getLocalPointer(e);
     });
-    canvas.addEventListener("pointerleave", () => {
+    document.addEventListener("pointerleave", () => {
       pointer.active = false;
     });
 

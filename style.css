@@ -558,15 +558,13 @@ img {
   border: 4px solid var(--bg);
 }
 .hero-canvas {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 /* ─── 2. ABOUT SECTION ─── */
@@ -584,45 +582,52 @@ img {
 .about-image-wrap {
   position: relative;
   display: inline-block;
+  margin-top: 30px;
+  animation: aboutCardFloat 6s ease-in-out infinite;
 }
 .about-photo-frame {
   position: relative;
-  width: 290px;
-  height: 380px;
+  width: 320px;
+  height: 320px;
   border-radius: 20px;
   z-index: 2;
   overflow: hidden;
   border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 .about-photo-frame img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.about-image-wrap::before,
-.about-image-wrap::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+.about-image-wrap:hover .about-photo-frame img {
+  transform: scale(1.05);
 }
 .about-image-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -12px;
+  border-radius: 28px;
   border: 2px solid var(--accent2);
-  transform: translate(-10px, 10px);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.35);
   z-index: 1;
-}
-.about-image-wrap::after {
-  border: 2px solid var(--accent);
-  transform: translate(10px, -10px);
-  z-index: 0;
+  animation: aboutBorderSpin 15s linear infinite;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .about-image-wrap:hover::before {
-  transform: translate(-5px, 5px);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
+  border-color: var(--accent);
 }
-.about-image-wrap:hover::after {
-  transform: translate(5px, -5px);
+
+@keyframes aboutCardFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes aboutBorderSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .about-right {
