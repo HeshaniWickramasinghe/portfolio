@@ -1,0 +1,92 @@
+# Heshani Wickramasinghe | Full-Stack & Android Developer
+
+[Skip to work](http://localhost:8000/#work)
+[Heshani](http://localhost:8000/#home)
+[Home](http://localhost:8000/#home)
+[About](http://localhost:8000/#about)
+[Work](http://localhost:8000/#work)
+[Credentials](http://localhost:8000/#credentials)
+[Contact](http://localhost:8000/#contact)
+Full-Stack & Android Developer
+
+# I build web & mobile apps that feel simple, fast & reliable
+Building real-world web and mobile applications with React, Node.js, Spring Boot & Kotlin. Specializing in security, databases, and multi-module solutions.
+[See my Work](http://localhost:8000/#work)
+[Download CV](http://localhost:8000/cv-heshani.txt)
+[Gmail](mailto:wickramasinghheshani@gmail.com)
+[GitHub](https://github.com/HeshaniWickramasinghe)
+[LinkedIn](https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b)
+[Phone](tel:+94769304405)
+Moves with your cursor. Lightweight canvas rendering.
+
+## My Projects
+[github.com/chanuka-mr/Smart-Alert](https://github.com/chanuka-mr/Smart-Alert)
+
+### Smart Alert – School Portal 2025
+Digitizing attendance tracking, transport operations, and notices with real-time communications.
+[Live Demo](https://heshaniwickramasinghe.github.io/smart-alert/)
+[GitHub](https://github.com/chanuka-mr/Smart-Alert)
+[github.com/HeshaniWickramasinghe/Uni-Connect](https://github.com/HeshaniWickramasinghe/Uni-Connect)
+
+### Uni-Connect – Community Portal 2026
+Integrated university platform for lost & found, peer tutoring, and payment engagement.
+[Live Demo](https://heshaniwickramasinghe.github.io/uni-connect/)
+[GitHub](https://github.com/HeshaniWickramasinghe/Uni-Connect)
+[github.com/MatheeshaKuruppu/SmartCampus](https://github.com/MatheeshaKuruppu/SmartCampus)
+
+### SmartCampus – Resource Planner 2026
+Campus facility booking with conflict detection, ticket trackers, and Google OAuth 2.0.
+[Live Demo](https://heshaniwickramasinghe.github.io/smart-campus/)
+[GitHub](https://github.com/MatheeshaKuruppu/SmartCampus)
+[github.com/HeshaniWickramasinghe/Nuvio](https://github.com/HeshaniWickramasinghe/Nuvio)
+
+### Nuvio – Wellness & Habit Tracker 2025
+Android productivity application using Room Database local persistence and MVVM architecture.
+[GitHub](https://github.com/HeshaniWickramasinghe/Nuvio)
+
+## About Me
+
+### I'm Heshani Wickramasinghe and Full-Stack & Android Developer
+I'm an Information Technology undergraduate at SLIIT, Malabe, specializing in full-stack web and mobile application development. I enjoy building multi-module applications with real-world features like authentication, real-time updates, and role-based access control. I work with the MERN stack, Spring Boot REST APIs, and Kotlin-based Android development. I'm seeking a software engineering internship to contribute segmentally and grow professionally.
+E-mail : wickramasinghheshani@gmail.com
+Degree : BSc (Hons) in Information Technology
+Phone : +94 769 304 405
+City : Malabe, Sri Lanka
+[Hire Me](http://localhost:8000/#contact)
+
+##### MERN Stack
+
+##### Spring Boot
+
+##### Kotlin / Android Studio
+
+##### REST APIs / JWT
+
+##### MongoDB / SQL
+
+## Credentials
+
+### Qualifications
+- BSc (Hons) in Information Technology — SLIIT Undergraduate (Malabe, Sri Lanka)
+
+### Certifications
+- MongoDB — MongoDB Atlas Administrator Path (Official Certification, 2026)
+- University of Moratuwa (Open UOM) — Python for Beginners (2026)
+
+### Core Skills
+
+## Contact
+
+### Quick Links
+One click to reach me.
+[Gmail](mailto:wickramasinghheshani@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b)
+[GitHub](https://github.com/HeshaniWickramasinghe)
+[Phone Call](tel:+94769304405)
+- Email: wickramasinghheshani@gmail.com
+- Phone: +94 769 304 405
+- Location: Malabe, Sri Lanka
+© 2026 Heshani Wickramasinghe
+[Email](mailto:wickramasinghheshani@gmail.com)
+[GitHub](https://github.com/HeshaniWickramasinghe)
+[LinkedIn](https://www.linkedin.com/in/heshani-wickramasinghe-77b21840b)
