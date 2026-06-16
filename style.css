@@ -976,59 +976,104 @@ img {
   line-height: 1.55;
 }
 
-/* Tech Stack Category Cards */
-.tech-stack-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
+/* Tech Stack Roller Marquee */
+.tech-roller-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  padding: 10px 0;
+  /* Fade mask edges for premium feel */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 92%, rgba(0, 0, 0, 0) 100%);
 }
+
+.tech-roller-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: techScroll 35s linear infinite;
+}
+
+/* Pause scroll on hover to let users read card contents */
+.tech-roller-container:hover .tech-roller-track {
+  animation-play-state: paused;
+}
+
 .tech-card {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px;
-  transition: all 0.3s ease;
+  padding: 20px 24px;
+  width: 270px;
+  flex-shrink: 0;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .tech-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-color: var(--accent2);
-  box-shadow: 0 10px 30px rgba(var(--accent2-rgb), 0.12);
+  background: var(--panel-hover);
+  box-shadow: 0 12px 30px rgba(var(--accent2-rgb), 0.15);
 }
+
 .tech-card-title {
-  font-size: 0.86rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.tech-card-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-.tech-item {
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+}
+
+.tech-card-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px currentColor;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
   color: var(--text2);
-  transition: color 0.2s;
+  transition: all 0.25s ease;
   font-family: monospace;
 }
+
 .tech-item:last-child {
   border-bottom: none;
 }
+
 .tech-item:hover {
   color: var(--accent2);
+  transform: translateX(4px);
 }
+
 .tech-icon {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes techScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Since we cloned the cards exactly, scroll half the track width */
+    transform: translateX(-50%);
+  }
 }
 
 /* ─── 5. CONTACT SECTION ─── */
