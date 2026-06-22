@@ -21,15 +21,7 @@
 
   <link rel="stylesheet" href="style.css" />
 
-  <!-- EmailJS Integration -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: "ByMaLfQzcZKaKkMCe", // Using the designated portfolio credentials
-      });
-    })();
-  </script>
+  
 </head>
 
 <body>
@@ -279,29 +271,7 @@
         <h6 class="section-title">My Projects</h6>
 
         <div class="projects-grid">
-          <!-- Project Card 1: Smart Alert -->
-          <article class="project-card" data-title="Smart Alert – School Portal" data-year="2025"
-            data-desc="Digitizing attendance tracking, transport operations, and notices with real-time communications. Features role-based dashboards for students, teachers, and admins with JWT-secured routes."
-            data-tags="MongoDB,Express.js,React,Node.js,JWT"
-            data-demo="https://heshaniwickramasinghe.github.io/smart-alert/"
-            data-github="https://github.com/chanuka-mr/Smart-Alert" data-img="cover_smart_alert.png">
-            <div class="project-thumb">
-              <img src="cover_smart_alert.png" alt="Smart Alert school portal mockup" />
-            </div>
-            <a href="https://github.com/chanuka-mr/Smart-Alert" target="_blank" rel="noreferrer"
-              class="project-gh-bubble" onclick="event.stopPropagation()">
-              <i class="bi bi-github"></i>
-              github.com/chanuka-mr/Smart-Alert
-            </a>
-            <div class="project-overlay">
-              <h3>Smart Alert – School Portal <span class="project-year">2025</span></h3>
-              <p>Digitizing attendance tracking, transport operations, and notices with real-time communications.</p>
-              <div class="project-tags">
-                <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span><span>JWT</span>
-              </div>
-              <p class="project-click-hint"><i class="bi bi-arrow-up-left-square"></i> Click to expand</p>
-            </div>
-          </article>
+          
 
           <!-- Project Card 2: Uni-Connect -->
           <article class="project-card" data-title="Uni-Connect – Community Portal" data-year="2026"
@@ -351,6 +321,29 @@
             </div>
           </article>
 
+          <!-- Project Card 1: Smart Alert -->
+          <article class="project-card" data-title="Smart Alert – School Portal" data-year="2025"
+            data-desc="Digitizing attendance tracking, transport operations, and notices with real-time communications. Features role-based dashboards for students, teachers, and admins with JWT-secured routes."
+            data-tags="MongoDB,Express.js,React,Node.js,JWT"
+            data-demo="https://heshaniwickramasinghe.github.io/smart-alert/"
+            data-github="https://github.com/chanuka-mr/Smart-Alert" data-img="cover_smart_alert.png">
+            <div class="project-thumb">
+              <img src="cover_smart_alert.png" alt="Smart Alert school portal mockup" />
+            </div>
+            <a href="https://github.com/chanuka-mr/Smart-Alert" target="_blank" rel="noreferrer"
+              class="project-gh-bubble" onclick="event.stopPropagation()">
+              <i class="bi bi-github"></i>
+              github.com/chanuka-mr/Smart-Alert
+            </a>
+            <div class="project-overlay">
+              <h3>Smart Alert – School Portal <span class="project-year">2025</span></h3>
+              <p>Digitizing attendance tracking, transport operations, and notices with real-time communications.</p>
+              <div class="project-tags">
+                <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span><span>JWT</span>
+              </div>
+              <p class="project-click-hint"><i class="bi bi-arrow-up-left-square"></i> Click to expand</p>
+            </div>
+          </article>
           <!-- Project Card 4: Nuvio -->
           <article class="project-card" data-title="Nuvio – Wellness &amp; Habit Tracker" data-year="2025"
             data-desc="Android productivity application using Room Database local persistence and MVVM architecture. Supports habit creation, daily check-ins, streak tracking, and category-based task management."
@@ -614,6 +607,7 @@
         <div class="contact-grid">
           <!-- Form -->
           <form class="contact-form" id="contactForm" novalidate>
+            <input type="hidden" name="access_key" value="a96f7532-bd18-48fc-8e8e-31d720b1ef25">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Name</label>

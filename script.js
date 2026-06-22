@@ -256,7 +256,7 @@
   }
 
   // ============================================
-  // CONTACT FORM SUBMISSION
+  // CONTACT FORM SUBMISSION (Web3Forms)
   // ============================================
   const form = document.getElementById("contactForm");
   const clearBtn = document.getElementById("clearBtn");
@@ -266,7 +266,7 @@
   }
 
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const name = document.getElementById("name").value.trim();
@@ -288,30 +288,35 @@
       submitBtn.disabled = true;
       submitBtn.textContent = "SENDING...";
 
-      const templateParams = {
-        name: name,
-        email: email,
-        subject: subject,
-        message: message,
-      };
+      const formData = new FormData(form);
 
-      emailjs.send("service_4p9vfjo", "template_izebr8l", templateParams)
-        .then(() => {
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
           showToast("Message sent successfully! ✓");
           form.reset();
-        })
-        .catch((error) => {
-          console.error("EmailJS Error:", error);
-          showToast("EmailJS failed. Opening mail client...");
-          setTimeout(() => {
-            const mailtoLink = `mailto:wickramasinghheshani@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
-            window.location.href = mailtoLink;
-          }, 1500);
-        })
-        .finally(() => {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-        });
+        } else {
+          console.error("Web3Forms Error:", result);
+          showToast("Something went wrong. Please try again.");
+        }
+      } catch (error) {
+        console.error("Network Error:", error);
+        showToast("Network error. Opening mail client...");
+        setTimeout(() => {
+          const mailtoLink = `mailto:wickramasinghheshani@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
+          window.location.href = mailtoLink;
+        }, 1500);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
     });
   }
 
